@@ -1,5 +1,5 @@
 alasql(['CREATE TABLE IF NOT EXISTS beige_books',
-	'SELECT * INTO beige_books FROM CSV("beige_books.csv",{headers:true})'
+	'SELECT * INTO beige_books FROM CSV("js/beige_books.csv",{headers:true})'
 	]).then(function(res){
 		
 		var number_of_docs = alasql('SELECT COUNT(*) FROM beige_books');
